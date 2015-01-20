@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+body { margin: 0px; padding: 0px; font-family: Arial, Helvetica, sans-serif; }
+.body_table { width: 960px; }
+.body_table_logo { width: 700px; height: 80px; }
+.body_table_log { padding-left: 10px; }
+.input_enry_form { width: 150px; }
+.logo { font-size: 36px; }
+.body_table_main { font-size: 16px; }
+.body_table_main p {  padding-left: 10px; padding-right: 10px; padding-bottom: 10px; text-align: justify; }
+.body_table_footer { text-align: center; padding-bottom: 10px; padding-top: 10px; }
+a { text-decoration: none; color: #0066FF; }
+a:hover { text-decoration: underline; }
+img { border: 0px; }
