@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^(i\/[0-9]+.*)$ http://%{HTTP_HOST}:8080/$1 [L]
+RewriteRule ^api/upload$ http://%{HTTP_HOST}:8080/upload [L]
+RewriteRule ^api/delete$ http://%{HTTP_HOST}:8080/delete [L]
