@@ -24,9 +24,9 @@ E-mail: &nbsp;<input type="text" name="email" class="input_enry_form" style="mar
 else {
 ?>
 
-<a href="users.php?id=<?php echo $id_user; ?>"><?php echo $username_user; ?></a><br/>
+<a href="list.php?id=<?php echo $id_user; ?>"><?php echo $username_user; ?></a><br/>
 Загружено файлов: <?php echo $num_files; ?><br>
-Свободно <?php echo (50-$size_files); ?> из 50 Мбайт<br>
+Свободно <?php echo number_format((50*1024*1024-$size_files)/(1024*1024),2); ?> из 50 Мбайт<br>
 <a href="settings.php">Настройки</a> <a href="?exit">Выход</a>
 
 
