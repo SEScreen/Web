@@ -5,6 +5,33 @@
 .style1 {color: #CC33FF}
 -->
 </style>
+    
+<script type="text/javascript" src="js/photoPlugin/jquery.js"></script>
+<script type="text/javascript" src="js/photoPlugin/jquery.shadow.js"></script>
+<script type="text/javascript" src="js/photoPlugin/jquery.ifixpng.js"></script>
+<script type="text/javascript" src="js/photoPlugin/jquery.fancyzoom.js"></script>
+<script type="text/javascript">
+$(function() {
+	//Set the default directory to find the images needed
+	//by the plugin (closebtn.png, blank.gif, loading images ....)
+	$.fn.fancyzoom.defaultsOptions.imgDir='images/ressources/'; //very important must finish with a /
+
+	// Select all links in object with gallery ID using the defaults options
+	$('#gallery a').fancyzoom(); 
+
+	// Select all links with tozoom class, set the open animation time to 1000
+	$('a.tozoom').fancyzoom({Speed:1000});
+
+	// Select all links set the overlay opacity to 80%
+	$('a').fancyzoom({overlay:0.8});
+	
+	//new rev > 1.2
+	//apply fancyzoom effect on all image whose class is fancyzoom !!
+	$('img.fancyzoom').fancyzoom();
+
+
+});
+</script>
 </head>
 
 <body>
@@ -26,7 +53,7 @@ else {
 
 <a href="list.php?id=<?php echo $id_user; ?>"><?php echo $username_user; ?></a><br/>
 Загружено файлов: <?php echo $num_files; ?><br>
-Свободно <?php echo number_format((50*1024*1024-$size_files)/(1024*1024),2); ?> из 50 Мбайт<br>
+Свободно <?php echo number_format(($memoryUSER*1024*1024-$size_files)/(1024*1024),2); ?> из 50 Мбайт<br>
 <a href="settings.php">Настройки</a> <a href="?exit">Выход</a>
 
 

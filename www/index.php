@@ -11,6 +11,6 @@ include('blocks/top_bd_connect.php');
   <p>Доброго времени суток! Мы рады приветствовать вас на нашем портале. Цель проекта - облегчить возможность обмена скриншотами у пользователей. Чтобы начать пользоваться нашим творением вам необходимо <a href="/registration.php"><strong>зарегистрироваться</strong></a> и скачать программу <a href="#"><strong>"SEScreen"</strong></a> на свой копьютер.</p>
   
  
- <img src="~material/rand_img/1.png" width="400" height="250" style=" margin-left: 250px;"/>
+ <a href="~material/rand_img/1.png"><img src="~material/rand_img/1.png" width="400" height="250" style=" margin-left: 250px;"/></a>
  <br />
 <?php include('blocks/bottom.php'); ?>

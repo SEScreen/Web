@@ -7,9 +7,9 @@ header('Location: /');
 }
 if($_GET)
 {
-$_GET['email']=addslashes($_GET['email']);
-$_GET['code']=addslashes($_GET['code']);
-$query_mail="SELECT *FROM `accounts` WHERE `email` LIKE '".$_GET['email']."'";
+//$_GET['email']=addslashes($_GET['email']);
+//$_GET['code']=addslashes($_GET['code']);
+$query_mail="SELECT * FROM `accounts` WHERE `email` LIKE '".$_GET['email']."'";
 $res_mail=mysql_query($query_mail) or die (mysql_error());
 $number_mail=mysql_num_rows($res_mail);
 if($number_mail == 1)
@@ -36,10 +36,11 @@ mail($_POST['email'], $title , "Теперь ваш пароль на сайте
 }
 if($_POST)
 {
-$_POST['email']=addslashes($_POST['email']);
+//$_POST['email']=addslashes($_POST['email']);
 $query_mail="SELECT * FROM `accounts` WHERE `email` LIKE '".$_POST['email']."'";
 $res_mail=mysql_query($query_mail) or die (mysql_error());
 $number_mail=mysql_num_rows($res_mail);
+echo $_POST['email'];
 if($number_mail == 0)
 {
 //Error

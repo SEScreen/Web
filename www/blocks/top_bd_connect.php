@@ -34,6 +34,7 @@ $apikeyUSER=$_SESSION['apikey'];
 while($row_user=mysql_fetch_array($res_user)) {
 $id_user=$row_user['i'];
 $username_user=$row_user['username'];
+$memoryUSER=$row_user['memory'];
 }
 
 $query_files="SELECT * FROM `uploads` WHERE `apikey` LIKE '".$_SESSION['apikey']."'";

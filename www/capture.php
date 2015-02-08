@@ -16,6 +16,7 @@ $letters = 'ABCDEFGKIJKLMNOPQRSTUVWXYZ'; // алфавит
   putenv( 'GDFONTPATH=' . realpath('.') ); //проверяет путь до файла со шрифтами
 
   $captcha = '';//обнуляем текст
+  $captcha_s='';
   for ($i = 0; $i < $caplen; $i++)
   {
     $captcha .= $letters[ rand(0, strlen($letters)-1) ]; // дописываем случайный символ из алфавила 
@@ -24,11 +25,9 @@ $letters = 'ABCDEFGKIJKLMNOPQRSTUVWXYZ'; // алфавит
     $y = $height - ( ($height - $fontsize) / 2 ); // координата Y
     $curcolor = imagecolorallocate( $im, rand(0, 100), rand(0, 100), rand(0, 100) );//цвет для текущей буквы
     $angle = rand(-25, 25);//случайный угол наклона 
-	$captcha_s=$captcha_s.$captcha[$i];
+    $captcha_s.=$captcha[$i];
     imagettftext($im, $fontsize, $angle, $x, $y, $curcolor, $font, $captcha[$i]); //вывод текста
   }
-
-  // открываем сессию для сохранения сгенерированного текста
   session_start();
   $_SESSION['capcha'] = $captcha_s;
 
