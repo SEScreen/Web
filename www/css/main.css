@@ -1,8 +1,8 @@
 @font-face{
 font-family:Aaargh;
-src:url('/fonts/aaargh_cyrillic.ttf'),
-    url('/fonts/aaargh_cyrillic.eot'),
-	url('/fonts/aaargh_cyrillic.woff');
+src:url('aaargh_cyrillic.ttf'),
+    url('aaargh_cyrillic.eot'),
+	url('aaargh_cyrillic.woff');
 }
 .main{
 width:60%;
