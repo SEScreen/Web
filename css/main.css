@@ -1,0 +1,166 @@
+@font-face{
+font-family:Aaargh;
+src:url('/fonts/aaargh_cyrillic.ttf'),
+    url('/fonts/aaargh_cyrillic.eot'),
+	url('/fonts/aaargh_cyrillic.woff');
+}
+.main{
+width:60%;
+margin-left:20%;
+min-width:600px;
+}
+body{
+background:rgba(0, 0, 0, 0.1);
+}
+header{
+width:100%;
+min-height:155px;
+background:rgba(0, 0, 0, 0.15);
+position:relative;
+}
+.main div{
+min-height:600px;
+width:100%;
+background:white;
+}
+footer{
+min-height:100px;
+width:100%;
+background:rgba(0, 0, 0, 0.15);
+}
+form{
+display:block;
+height:100px;
+width:240px;
+position:absolute;
+right:1%;
+font-size:15px;
+font-family:Aaargh, "Verdana", Geneva, sans-serif;
+top:3px;
+}
+input[type="email"]{
+width:200px;
+height:15px;
+padding:5px;
+}
+input[type="password"]{
+width:200px;
+height:15px;
+padding:5px;
+margin-top:10px;
+}
+input[type="submit"]{
+margin-top:10px;
+display:inline-block;
+border-radius:0;
+height:30px;
+width:80px;
+text-align:center;
+background:rgba(0, 0, 0, 0.12);
+font-size:15px;
+cursor:pointer;
+transition:all 0.2s;
+}
+a{
+text-decoration:none;
+color:black;
+display:inline-block;
+margin-left:13px;
+font-size:14px;
+}
+a:hover{
+color:#007ba7;
+}
+input[type="submit"]:hover{
+background:#fffdd0;
+}
+a.screen{
+margin-left:20%;
+width:60%;
+}
+p{
+font-family:Aaargh, "Verdana", Geneva, sans-serif;
+font-size:18px;
+text-indent:30px;
+padding:20px 30px 0 30px;
+}
+footer p.footer{
+display:block;
+text-align:center;
+}
+footer a{
+margin:0;
+width:50px;
+font-size:18px;
+text-indent:0;
+}
+p.desk a{
+color:#007cad;
+font-size:18px;
+margin:0;
+text-align:left;
+text-decoration:underline;
+text-indent:0;
+}
+p.social a{
+display:block;
+width:30px;
+height:30px;
+border-radius:50%;
+margin:0 10px;
+display:inline-block;
+}
+p.social{
+vertical-align:top;
+}
+a.vk{
+background:url('/logs.png') no-repeat 0 0 rgba(0, 0, 0, 0.1);
+transition:all 0.2s;
+}
+a.vk:hover{
+background-color:#517498;
+}
+a.fb{
+background:url("/logs.png") no-repeat -30px 0 rgba(0, 0, 0, 0.1);
+margin-right:0;
+transition:all 0.2s;
+}
+a.fb:hover{
+background-color:#425f9c;
+}
+a.tw{
+background:url('/logs.png') no-repeat -60px 0 rgba(0, 0, 0, 0.1);
+margin-right:0;
+transition:all 0.2s;
+}
+a.tw:hover{
+background-color:#55acee;
+}
+a.gl{
+background:url('/logs.png') no-repeat -90px 0 rgba(0, 0, 0, 0.1);
+margin-right:0;
+transition:all 0.2s;
+}
+a.gl:hover{
+background-color:#da4936;
+}
+a.ok{
+background:url('/logs.png') no-repeat -120px 0 rgba(0, 0, 0, 0.1);
+margin-right:0;
+transition:all 0.2s;
+}
+a.ok:hover{
+background-color:#f2720c;
+}
+a.mail{
+background:url('/logs.png') no-repeat -150px 0 rgba(0, 0, 0, 0.1);
+margin-right:0;
+transition:all 0.2s;
+}
+a.mail:hover{
+background-color:#168de2;
+}
+a.sescreen{ 
+width:40%;
+margin-top:25px;
+} 
