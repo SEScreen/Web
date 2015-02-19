@@ -1,0 +1,147 @@
+@font-face{
+font-family:Aaargh;
+src:url('aaargh_cyrillic.ttf'),
+    url('aaargh_cyrillic.eot'),
+	url('aaargh_cyrillic.woff');
+}
+@font-face{
+font-family:AaarghBold;
+src:url('aaargh_cyrillic_bold.ttf'),
+    url('aaargh_cyrillic_bold.eot'),
+    url('aaargh_cyrillic_bold.woff');
+}
+
+.main{
+width:60%;
+margin-left:20%;
+min-width:600px;
+}
+body{
+background:rgba(0, 0, 0, 0.1);
+font-family:Aaargh, Verdana, Geneva, sans-serif;
+font-size:18px;
+}
+header{
+width:100%;
+min-height:155px;
+background:rgba(0, 0, 0, 0.15);
+position:relative;
+font-family:Aaargh;
+font-size:18px;
+}
+.main div{
+min-height:585px;
+width:100%;
+background:white;
+}
+footer{
+min-height:100px;
+width:100%;
+background:rgba(0, 0, 0, 0.15);
+}
+footer p.footer{
+display:block;
+text-align:center;
+}
+a.sescreen{
+width:40%;
+height:100%;
+}
+header nav{
+	position:absolute;
+	width:240px;
+	display:inline-block;
+	right:5px;
+	top:20px;
+}
+nav span{
+	display:block;
+}
+nav span:first-of-type{
+	margin-bottom:5px;
+}
+nav a{
+	text-decoration:none;
+	color:#007ba7;
+}
+nav a.pers{
+	width:150px;
+	display:block;
+	text-align:center;
+	height:20px;
+	padding:5px;
+	border-radius:2px;
+	transition:all 0.3s;
+}
+nav a.pers:hover{
+	background:#e6e6e6;
+}
+nav a.set{
+	height:20px;
+	width:100px;
+	padding:5px;
+	display:inline-block;
+	border-radius:2px;
+	text-align:center;
+	transition:all 0.3s;
+}
+nav a.set:hover{
+	background:#e6e6e6;
+}
+nav a.ent{
+	display:inline-block;
+	height:20px;
+	width:70px;
+	text-align:center;
+	padding:5px;
+	border-radiux:2px;
+	transition:all 0.3s;
+}
+nav a.ent:hover{
+	background:#e6e6e6;
+}
+p{
+	padding:20px 30px 0 30px;
+}
+.settings p{
+	font-family:AaarghBold;
+	font-size:20px;
+	margin-top:18px;
+}
+form{
+	width:520px;
+	margin-left:20px;
+	padding:5px;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+	width:200px;
+height:15px;
+padding:5px;
+margin-bottom:10px;
+font-family:Aaargh;
+}
+label{
+	display:inline-block;
+	width:270px;
+}
+input[type="submit"]{
+	width:150px;
+	font-family:Aaargh;
+	font-size:16px;
+	height:35px;
+	background:rgba(0, 0, 0, 0.2);
+	transition:all 0.3s;
+	display:block;
+	padding:5px;
+}
+.settings input[type="submit"]:hover{
+	background:#e6e6e6;
+	cursor:pointer;
+}
+footer p a{
+	color:black;
+	text-decoration:none;
+}
+footer p a:hover{
+	color:#007ba7;
+}

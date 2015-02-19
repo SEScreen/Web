@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="SEScreen">
+<meta name="keywords" content="SEScreen,sescreen,screenshot,program,скриншот,программа,открытый проект">
+<meta name="description" content="SEScreen. Ваши скриншоты - наша работа!">
+<title>SEScreen</title>
+<link href="css/settings.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="main">
+<header>
+<a href="#" class="sescreen"><img src="mainhref.png" width="40%" style="margin:25px 0 0 13px;"></a>
+<nav>
+<a href="#" class="pers">Мой профиль</a>
+<span>Загружено файлов:</span>
+<span>Свободно </span>
+<a href="#" class="set">Настройки</a>
+<a href="#" class="ent">Выход</a>
+</nav>
+</header>
+<div class="settings">
+<p>Настройки</p>
+<form>
+<fieldset>
+<legend>Смена имени</legend>
+<label for="name">Имя: </label><input type="text" name="name" id="name" autocomplete="on" required>
+<input type="submit" name="change" id="change" value="Изменить имя">
+</fieldset>
+</form>
+<form>
+<fieldset>
+<legend>Смена пароля</legend>
+<label for="oldpass">Пароль:</label><input type="password" name="oldpass" id="oldpass" autocomplete="off" required>
+<label for="newpass">Новый пароль:</label><input type="password" name="newpass" id="newpass" autocomplete="off" required>
+<label for="repnewpass">Повторите новый пароль:</label><input type="password" name="repnewpass" id="repnewpass" autocomplete="off" required>
+<input type="submit" id="changepass" name="changepass" value="Сменить пароль">
+</fieldset>
+</form>
+<form>
+<fieldset>
+<legend>Смена электронного адреса</legend>
+<label for="email">Новый e-mail:</label><input type="email" name="email" id="email" autocomplete="on" required>
+<label for="check">Пароль для подтверждения:</label><input type="password" name="check" id="check" autocomplete="off" required>
+<input type="submit" name="cemail" id="cemail" value="Сменить e-mail">
+</fieldset>
+</form>
+</div>
+<footer>
+<p class="footer">©2015 SEScreen. OpenSource Project <a href="#">GitHub</a></p>
+</footer>
+</div>
+</body>
+</html>
