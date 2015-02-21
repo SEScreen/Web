@@ -58,7 +58,7 @@ border-radius:0;
 height:30px;
 width:80px;
 text-align:center;
-background:rgba(0, 0, 0, 0.2);
+background:rgba(0, 0, 0, 0.1);
 font-size:15px;
 cursor:pointer;
 transition:all 0.2s;
@@ -107,9 +107,8 @@ text-indent:0;
 }
 p.social a{
 display:block;
-width:30px;
-height:30px;
-border-radius:50%;
+width:40px;
+height:40px;
 margin:0 10px;
 display:inline-block;
 }
@@ -117,51 +116,39 @@ p.social{
 vertical-align:top;
 }
 a.vk{
-background:url('/logs.png') no-repeat 0 0 rgba(0, 0, 0, 0.1);
+background:url('/logs1.png') no-repeat 0 -160px;
 transition:all 0.2s;
 }
-a.vk:hover{
-background-color:#517498;
+.vk, .fb, .tw, .gl, .ok, .mail{
+	opacity:0.7;
+}
+a.vk:hover, a.fb:hover, a.tw:hover, a.gl:hover, a.ok:hover, a.mail:hover{
+opacity:1;
 }
 a.fb{
-background:url("/logs.png") no-repeat -30px 0 rgba(0, 0, 0, 0.1);
+background:url("/logs.png") no-repeat 0 -80px;
 margin-right:0;
 transition:all 0.2s;
-}
-a.fb:hover{
-background-color:#425f9c;
 }
 a.tw{
-background:url('/logs.png') no-repeat -60px 0 rgba(0, 0, 0, 0.1);
+background:url('/logs.png') no-repeat 0 -120px;
 margin-right:0;
 transition:all 0.2s;
-}
-a.tw:hover{
-background-color:#55acee;
 }
 a.gl{
-background:url('/logs.png') no-repeat -90px 0 rgba(0, 0, 0, 0.1);
+background:url('/logs.png') no-repeat 0 -200px;
 margin-right:0;
 transition:all 0.2s;
-}
-a.gl:hover{
-background-color:#da4936;
 }
 a.ok{
-background:url('/logs.png') no-repeat -120px 0 rgba(0, 0, 0, 0.1);
+background:url('/logs1.png') no-repeat 0 -520px;
 margin-right:0;
 transition:all 0.2s;
-}
-a.ok:hover{
-background-color:#f2720c;
 }
 a.mail{
-background:url('/logs.png') no-repeat -150px 0 rgba(0, 0, 0, 0.1);
+background:url('/logs1.png') no-repeat 0 -240px;
 margin-right:0;
 transition:all 0.2s;
-}
-a.mail:hover{
-background-color:#168de2;
 }
 a.sescreen{ 
 width:40%;

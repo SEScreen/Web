@@ -1,3 +1,4 @@
+@charset "utf-8";
 @font-face{
 font-family:Aaargh;
 src:url('/fonts/aaargh_cyrillic.ttf'),
@@ -33,6 +34,8 @@ font-size:18px;
 min-height:585px;
 width:100%;
 background:white;
+margin-top:18px;
+position:relative;
 }
 footer{
 min-height:100px;
@@ -103,41 +106,6 @@ nav a.ent:hover{
 p{
 	padding:20px 30px 0 30px;
 }
-.settings p{
-	font-family:AaarghBold;
-	font-size:20px;
-	margin-top:18px;
-}
-form{
-	width:520px;
-	margin-left:20px;
-	padding:5px;
-}
-input[type="text"], input[type="password"], input[type="email"]{
-	width:200px;
-height:15px;
-padding:5px;
-margin-bottom:10px;
-font-family:Aaargh;
-}
-label{
-	display:inline-block;
-	width:270px;
-}
-input[type="submit"]{
-	width:150px;
-	font-family:Aaargh;
-	font-size:16px;
-	height:35px;
-	background:rgba(0, 0, 0, 0.2);
-	transition:all 0.3s;
-	display:block;
-	padding:5px;
-}
-.settings input[type="submit"]:hover{
-	background:#e6e6e6;
-	cursor:pointer;
-}
 footer p a{
 	color:black;
 	text-decoration:none;
@@ -145,3 +113,31 @@ footer p a{
 footer p a:hover{
 	color:#007ba7;
 }
+.user p{
+	font-family:AaarghBold;
+	font-size:20px;
+	display:inline-block;
+}
+.user .file{
+	display:inline-block;
+	height:40px;
+	font-family:inherit;
+	background:#30f226;
+}
+form{
+	width:261px;
+	height:60px;
+	position:absolute;
+	left:203px;
+	top:20px;
+	opacity:0;
+}
+input[type="file"]{
+	width:257px;
+	height:57px;
+	cursor:pointer;
+}
+
+	
+	/* CSS Document */
+
